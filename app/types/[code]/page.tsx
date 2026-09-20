@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   return mbtiTypes.map((t) => ({ code: t.code.toLowerCase() }));
 }
 
-export default async function MbtiDetailPage({ params }: { params: { code: string } }) {
-  const type = getMbtiByCode(params.code);
+export default async function MbtiDetailPage({ params }: { params: Promise<{ code: string }> }) {
+  const { code } = await params;
+  const type = getMbtiByCode(code);
   if (!type) return notFound();
 
   const allPhotos = await getAllPhotos();

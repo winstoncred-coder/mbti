@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getPhotoById, getAllPhotos } from '@/lib/photos';
-import { placeholderDataUri } from '@/lib/placeholder';
+import { resolvePhotoSrc } from '@/lib/placeholder';
 import ShareButton from '@/components/ShareButton';
 
 export async function generateStaticParams() {
@@ -16,7 +16,7 @@ export default async function PhotoPage({ params }: { params: Promise<{ id: stri
   return (
     <main className="max-w-3xl mx-auto px-7 py-16">
       <img
-        src={placeholderDataUri(photo.imageSeed, 1600, 2000)}
+        src={resolvePhotoSrc(photo.imageSeed, 1600, 2000)}
         alt={photo.title}
         className="w-full rounded-lg mb-6"
       />

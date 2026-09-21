@@ -44,3 +44,9 @@ export function tintedPlaceholderDataUri(seed: string, baseHue: number, w = 800,
   </svg>`;
   return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
 }
+export function resolvePhotoSrc(imageSeed: string, w = 800, h = 1000): string {
+  if (imageSeed.startsWith('/') || imageSeed.startsWith('http')) {
+    return imageSeed;
+  }
+  return placeholderDataUri(imageSeed, w, h);
+}

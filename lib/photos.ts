@@ -16,7 +16,7 @@ export interface Photo {
 }
 
 const digitalPhotos: Photo[] = [
-  { id: 'd01', title: 'Rooftop, golden hour', caption: 'Shot on a rooftop just after sunrise.', category: 'digital', order: 1, imageSeed: 'digital-d01' },
+  { id: 'd01', title: 'Magnolia Tree', caption: 'Perfumer H, still life on a wooden tray.', category: 'digital', order: 1, imageSeed: '/photos/01.jpg' },
   { id: 'd02', title: 'Harbor fog, early', caption: 'The harbor before the city woke up.', category: 'digital', order: 2, imageSeed: 'digital-d02' },
   { id: 'd03', title: 'Portrait, downtown', caption: 'A stranger who agreed to one frame.', category: 'digital', order: 3, imageSeed: 'digital-d03' },
   { id: 'd04', title: 'Neon, wet street', caption: 'Reflections after a short rain.', category: 'digital', order: 4, imageSeed: 'digital-d04' },

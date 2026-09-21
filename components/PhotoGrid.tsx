@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import type { Photo } from '@/lib/photos';
-import { placeholderDataUri } from '@/lib/placeholder';
+import { resolvePhotoSrc } from '@/lib/placeholder';
 
 export default function PhotoGrid({
   photos,
@@ -27,7 +27,7 @@ export default function PhotoGrid({
           }`}
         >
           <img
-            src={placeholderDataUri(p.imageSeed, 800, 1000)}
+            src={resolvePhotoSrc(p.imageSeed, 800, 1000)}
             alt={p.title}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />

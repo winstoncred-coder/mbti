@@ -16,13 +16,15 @@ export interface Photo {
 }
 
 const digitalPhotos: Photo[] = [
+  const digitalPhotos: Photo[] = [
   { id: 'd01', title: 'Magnolia Tree', caption: 'Perfumer H, still life on a wooden tray.', category: 'digital', order: 1, imageSeed: '/photos/01.jpg' },
-  { id: 'd02', title: 'Harbor fog, early', caption: 'The harbor before the city woke up.', category: 'digital', order: 2, imageSeed: 'digital-d02' },
-  { id: 'd03', title: 'Portrait, downtown', caption: 'A stranger who agreed to one frame.', category: 'digital', order: 3, imageSeed: 'digital-d03' },
-  { id: 'd04', title: 'Neon, wet street', caption: 'Reflections after a short rain.', category: 'digital', order: 4, imageSeed: 'digital-d04' },
-  { id: 'd05', title: 'Ridgeline at dawn', caption: 'First light on the ridge.', category: 'digital', order: 5, imageSeed: 'digital-d05' },
-  { id: 'd06', title: 'Quiet alley, late fall', caption: 'An alley nobody else was in.', category: 'digital', order: 6, imageSeed: 'digital-d06' },
-];
+  { id: 'd02', title: 'Untitled 02', caption: '', category: 'digital', order: 2, imageSeed: '/photos/02.jpg' },
+  { id: 'd03', title: 'Untitled 03', caption: '', category: 'digital', order: 3, imageSeed: '/photos/03.jpg' },
+  { id: 'd04', title: 'Untitled 04', caption: '', category: 'digital', order: 4, imageSeed: '/photos/04.jpg' },
+  { id: 'd05', title: 'Untitled 05', caption: '', category: 'digital', order: 5, imageSeed: '/photos/05.jpg' },
+  { id: 'd06', title: 'Untitled 06', caption: '', category: 'digital', order: 6, imageSeed: '/photos/06.jpg' },
+  { id: 'd07', title: 'Untitled 07', caption: '', category: 'digital', order: 7, imageSeed: '/photos/07.jpg' },
+];];
 
 const filmPhotos: Photo[] = [
   { id: 'a01', title: '35mm, Portra 400', caption: 'One roll, a slow afternoon.', category: 'film', order: 1, imageSeed: 'analog-a01' },

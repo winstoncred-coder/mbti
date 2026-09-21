@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   return photos.map((p) => ({ id: p.id }));
 }
 
-export default async function PhotoPage({ params }: { params: { id: string } }) {
-  const photo = await getPhotoById(params.id);
+export default async function PhotoPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const photo = await getPhotoById(id);
   if (!photo) return notFound();
 
   return (

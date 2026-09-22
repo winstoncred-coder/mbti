@@ -8,12 +8,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#0b0c0e',
-        bgAlt: '#131418',
-        surface: '#1a1b1f',
-        ink: '#f2efe8',
-        muted: '#a09b8f',
-        border: 'rgba(255,255,255,0.09)',
+        bg: '#122A1E',
+        bgAlt: '#1B3A28',
+        surface: '#1F4530',
+        ink: '#F2EFE8',
+        muted: '#9FB3A4',
+        border: 'rgba(255,255,255,0.1)',
         accent: '#c98a3b',
         rose: '#b5675b',
       },

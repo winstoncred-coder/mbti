@@ -10,21 +10,18 @@ export interface Photo {
   caption: string;
   category: 'digital' | 'film';
   order: number;
-  // Once real images exist, this becomes a Supabase Storage public URL.
-  // For now it's a seed used to generate a placeholder gradient client-side.
   imageSeed: string;
 }
 
 const digitalPhotos: Photo[] = [
-  const digitalPhotos: Photo[] = [
   { id: 'd01', title: 'Magnolia Tree', caption: 'Perfumer H, still life on a wooden tray.', category: 'digital', order: 1, imageSeed: '/photos/01.jpg' },
   { id: 'd02', title: 'Untitled 02', caption: '', category: 'digital', order: 2, imageSeed: '/photos/02.jpg' },
   { id: 'd03', title: 'Untitled 03', caption: '', category: 'digital', order: 3, imageSeed: '/photos/03.jpg' },
   { id: 'd04', title: 'Untitled 04', caption: '', category: 'digital', order: 4, imageSeed: '/photos/04.jpg' },
   { id: 'd05', title: 'Untitled 05', caption: '', category: 'digital', order: 5, imageSeed: '/photos/05.jpg' },
-  { id: 'd06', title: 'Untitled 06', caption: '', category: 'digital', order: 6, imageSeed: '/photos/06.jpg' },
+  { id: 'd06', title: 'Untitled 06', caption: '', category: 'digital', order: 6, imageSeed: '/photos/06.JPG' },
   { id: 'd07', title: 'Untitled 07', caption: '', category: 'digital', order: 7, imageSeed: '/photos/07.jpg' },
-];];
+];
 
 const filmPhotos: Photo[] = [
   { id: 'a01', title: '35mm, Portra 400', caption: 'One roll, a slow afternoon.', category: 'film', order: 1, imageSeed: 'analog-a01' },
